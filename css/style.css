@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arimo';
+    background: no-repeat url("../images/backgound_image.jpg");
+    background-size: cover;
+}
+
+.ms-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.ms-label {
+    font-weight: 800;
+}
+
+.ms-input {
+    margin: 10px 0 10px 0;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 5px;
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #009d47;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    float: right; 
+}
+
+.submit-button:hover {
+    cursor: pointer;
+
+}
