@@ -14,6 +14,8 @@
     <main>
         <div class="ms-container">
             <form class="ms-form" action="includes/add_status.php" method="post">
+             <label class="ms-label">Process Name</label> <br>
+             <input class="ms-input" type="text" name="process-name"> <br>
              <label class="ms-label">Machine Name</label> <br>
              <input class="ms-input" type="text" name="machine_name"> <br>
              <label class="ms-label">Machine Status</label> <br>

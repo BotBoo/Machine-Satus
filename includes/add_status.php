@@ -9,6 +9,7 @@ $dbname = "gabriht1_botboo";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+$ProcessName = $_POST['process-name'];
 $MachineName = $_POST['machine_name'];
 $Status = $_POST['status'];
 
@@ -17,14 +18,15 @@ if ($conn->connect_error) {
 }
 
 $sql = 
-"UPDATE Machines SET machine_status = '$Status'
+"UPDATE Machines SET machine_status = '$Status', ProcessName = '$ProcessName'
 WHERE MachineName = '$MachineName'";
 
 if ($conn->query($sql) == TRUE) {
-    echo "<p>" . $MachineName. "</p>";
-    echo "<p>" . $Status. "</p>";
+    echo "<p>" . $ProcessName . "</p>";
+    echo "<p>" . $MachineName . "</p>";
+    echo "<p>" . $Status . "</p>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-mysqli_close();
+mysqli_close($conn);
