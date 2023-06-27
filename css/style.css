@@ -1,7 +1,6 @@
 body {
     font-family: 'Arimo';
-    background: no-repeat url("../images/backgound_image.jpg");
-    background-size: cover;
+    background-color: #252525 ;
 }
 
 .ms-container {

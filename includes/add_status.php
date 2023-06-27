@@ -9,9 +9,9 @@ $dbname = "gabriht1_botboo";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$ProcessName = $_POST['process-name'];
-$MachineName = $_POST['machine_name'];
-$Status = $_POST['status'];
+$ProcessName = htmlspecialchars($_POST['process-name']);
+$MachineName = htmlspecialchars($_POST['machine_name']);
+$Status = htmlspecialchars($_POST['status']);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
