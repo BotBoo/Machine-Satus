@@ -9,7 +9,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     width: 20%;
-    padding: 20px;
+    padding: 30px;
     border: none;
     border-radius: 10px;
     background: #ffffff;
@@ -26,9 +26,13 @@ body {
     padding: 5px;
 }
 
+.ms-input:focus {
+    outline: none;
+}
+
 .submit-button {
     padding: 10px;
-    background-color: #009d47;
+    background-color: #252525;
     border: none;
     border-radius: 5px;
     color: #ffffff;
