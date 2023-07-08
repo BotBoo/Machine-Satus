@@ -19,7 +19,7 @@
              <label class="ms-label">Machine Name</label> <br>
              <input class="ms-input" type="text" name="machine_name"> <br>
              <label class="ms-label">Machine Status</label> <br>
-             <input class="ms-input" type="text" name="status">
+             <input class="ms-input" type="text" name="status"> <br>
              <button class="submit-button" type="submit">Submit</button>
             </form>
         </div>
